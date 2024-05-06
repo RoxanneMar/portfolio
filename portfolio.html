@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <script src="https://kit.fontawesome.com/7416e39a88.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "Ezky8xwSGkB_SS0OP",
+            });
+        })();
+    </script>
+    <title>Portfolio | Roxanne MARCHAND</title>
+    <!--Police d'écriture-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Zen+Kaku+Gothic+New&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="nav-menu">
+            <p class="rm">Roxanne MARCHAND</P>
+            <ul class="nav-menu-ul">
+                <li class="nav-menu-li"><a class="nav-link active" href="#Accueil">Accueil</a></li>
+                <li class="nav-menu-li"><a class="nav-link" href="#A-propos-de-moi">À propos</a></li>
+                <li class="nav-menu-li"><a class="nav-link" href="#Mes-compétences">Mes compétences</a></li>
+                <li class="nav-menu-li"><a class="nav-link" href="#Mes-projets">Mes projets</a></li>
+                <li class="nav-menu-li"><a class="nav-link" href="#Contact">Contact</a></li>
+            </ul>
+            <div class="Burger-menu">
+                <i class="fa-solid fa-bars fa-2xl" style="color: #e85510;"></i>
+            </div>
+        </nav>
+    </header>
+    <article class="Accueil" id="Accueil">
+        <div class="Accueil-photo">
+            <img class="photo-RM" src="assets/IMG_20230302_110417 (3).jpg" alt="Photo de Roxanne Marchand">
+        </div>
+        <div class="Accueil-Hello">
+            <p>Hello!</p>
+            <p> Je m'appelle Roxanne Marchand <br class="accueil-br">et je suis developpeuse web en reconversion.</p>
+            <a href="assets/CV Roxanne MARCHAND Formation Développeur web et web mobile 2024.pdf" target="_blank">
+                <button class="CV-RM">
+                    <i class="fa-solid fa-download fa-lg" style="color: #e85410;"></i>
+                    CV Roxanne <br class="CV-br"> MARCHAND
+                </button>
+            </a>
+        </div>
+    </article>
+    <article class="A-propos-de-moi" id="A-propos-de-moi">
+        <div class="A-propos-de-moi-txt">
+            <h1>Voici mon histoire</h1>
+            <p>
+                J'ai commencer à me passionner pour le developpement web et de fil en aiguille j'ai entammé un
+                processus de reconversion.</p>
+            <p>J'ai commencer à apprendre les bases à l'aide d'Openclassroom. Souhaitant renforcer ces nouvelles
+                compétences, j'ai donc postuler à la formation Developpement Web et Web Mobile en alternance
+                dispencé par le <a class="lien" href="https://www.cefim.eu/" target="_blank">CEFIM</a>,</br>
+                l'école du web et des réseaux à Tours.</br>Etant admissible, je suis à la recherche de l'entreprise avec
+                laquelle je pourrais contribuer à des projets innovants<br> et batir une relation "gagnant-gagnant".</p>
+        </div>
+    </article>
+    <article id="Mes-compétences" class="Mes-compétences">
+        <nav class="Mes-compétences-menu">
+            <ul class="Mes-compétences-ul">
+                <li class="tabs-btn active"><a href="#Mes-compétences">Soft skills</a></li>
+                <li class="tabs-btn"><a href="#Mes-compétences">Hard skills</a></li>
+            </ul>
+        </nav>
+        <div class="Mes-compétences-skills active">
+            <div class="Mes-compétences-soft-skills">
+                <div class="Mes-compétences-soft-skills-rang">
+                    <div class="SOFTSKILL">
+                        <i class="fa-solid fa-laptop-code fa-5x" style="color: #e85510;"></i>
+                        <h1>Rapidité D'adaptation</h1>
+                        <p>Ayant une soif de connaissance et une facilité d'apprentissage. Je me rend vite opérationelle
+                            pour les différents projets et missions</p>
+                    </div>
+                    <div class="SOFTSKILL">
+                        <i class="fa-solid fa-clock fa-5x" style="color: #e85510;"></i>
+                        <h1> Gestion du temps</h1>
+                        <p>La clés réside dans l'organisation. Mon astuces ce sont les to-do-list.</p>
+                    </div>
+                    <div class="SOFTSKILL">
+                        <i class="fa-solid fa-comments fa-5x" style="color: #e85510;"></i>
+                        <h1>Communication</h1>
+                        <p>La communication avec les différents interlocuteurs et la clés de la réussite de tous mes
+                            projets entrepris</p>
+                    </div>
+
+                    <div class="SOFTSKILL">
+                        <i class="fa-solid fa-paintbrush fa-5x" style="color: #e85510;"></i>
+                        <h1>Créativité</h1>
+                        <p>Les idées sont le point de départ de tout progrès. Je partages et mets en pratique mes idées, au travail comme à
+                            la maison.</p>
+                    </div>
+                    <div class="SOFTSKILL">
+                        <i class="fa-solid fa-brain fa-5x" style="color: #e85510;"></i>
+                        <h1>Esprit d'analyse</h1>
+                        <p>L'esprit d'analyse, c'est cette capacité à solutionner le problème de la manière la plus
+                            juste, comprendre d'où vient le problème et de ce fait anticiper pour que cela ne se
+                            reproduise plus. Au final, c'est un gagne temps considérable. Avec les différents projets, 
+                            j'ai pu aussi me rendre compte qu'il n'y a pas qu'une seule méthode pour se débloquer d'une situation.</p>
+                    </div>
+                    <div class="SOFTSKILL">
+                        <i class="fa-solid fa-heart fa-5x" style="color: #e85510;"></i>
+                        <h1>Passion</h1>
+                        <p>Travailler c'est bien, travailler avec passion c'est mieux.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Mes-compétences-skills">
+            <div class="Mes-compétences-hard-skills">
+                <div class="Mes-compétences-soft-skills-rang">
+                    <div class="SOFTSKILL">
+                        <img class="compétences-logo" src="assets/html-5 (1).png" alt="HTML5">
+                        <h1>HTML5</h1>
+                    </div>
+                    <div class="SOFTSKILL">
+                        <img class="compétences-logo" src="assets/css-3 (1).png" alt="CSS3">
+                        <h1>CSS3</h1>
+                    </div>
+                    <div class="SOFTSKILL">
+                        <img class="compétences-logo" src="assets/js (1).png" alt="Js">
+                        <h1>JavaScript</h1>
+                    </div>
+                    <div class="SOFTSKILL">
+                        <img class="compétences-logo" src="assets/react-2 (2).svg" alt="React">
+                        <h1>React</h1>
+                    </div>
+                </div>
+                <div class="txt-explicatif">
+                    Voici un aperçus des compétences acquise. A l'aide d'Openclassroom et de MDN web docs, j'ai pu
+                    comprendre les rouages et les mettre en pratique.
+                    Afin d'avoir un aperçus de mes compétences, vous pouvez voir mon code sur GitHub grâce aux projets
+                    réalisés.
+                    Je vous donnes rendez-vous <a class="lien" href="#Mes-projets">ici</a> pour en voir plus.<br>
+                    Concernant React, je n'ai pour le moment pas de projet concret à vous présentez, cependant n'hésitez
+                    pas à mettre en favori mon portfolio afin de voir mon évolution.
+                </div>
+                <hr />
+                <h1 class="compétence-autres">Autres</h1>
+                <div class="Mes-compétences-soft-skills-rang">
+                    <div class="SOFTSKILL">
+                        <img class="compétences-logo" src="assets/photoshop (1).png" alt="Ps">
+                        <h1>PhotoShop</h1>
+                    </div>
+                    <div class="SOFTSKILL">
+                        <img class="compétences-logo" src="assets/photoshop-lightroom (1).png" alt="Lr">
+                        <h1>LightRoom</h1>
+                    </div>
+                    <div class="SOFTSKILL">
+                        <img class="compétences-logo" src="assets/github (2).png" alt="GitHub">
+                        <h1>GitHub</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article id="Mes-projets" class="Mes-projets">
+        <div class="projet-cadre">
+            <nav class="Mes-projets-menu">
+                <ul class="Mes-projets-ul">
+                    <li class="btn active"><a href="#Mes-projets">Projet: Taxi Foo'd</a></li>
+                    <li class="btn"><a href="#Mes-projets">Projet: Menu accordéon</a></li>
+                </ul>
+            </nav>
+            <hr />
+
+
+            <div class="PROJET active">
+
+                <div class="projet-rang">
+
+                    <div class="embedresize">
+                        <iframe class="video1" src="https://www.youtube.com/embed/bRhNNVqWtw8?si=eUkwZh0mGdjESUTD"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <a class="github-projet" href="https://github.com/RoxanneMar/TaxiFood" target="_blank">
+                        <i class="fa-brands fa-github fa-2xl" style="color: #e85510;"></i>
+                    </a>
+                    <p>Le projet Taxi foo'd à été réalisé dans le cadre de la semaine de testing. Dans le but de nous
+                        évalué sur notre capacité
+                        à travailler en autonomie dans un premier temps puis en équipe, en présentiel comme en
+                        distanciel ainsi que notre capacité à
+                        chercher les informations afin de réalisé le travail demandé.<br>
+                        En équipe de trois, nous devions créer une landing page, chacun des membres ont travaillé sur
+                        une page. Je me suis occupé de la page panier.
+                        La page panier doit pouvoir communiquer avec le stock existant, on retrouve également les
+                        fonction ajout et retrait de produit, ces derniers
+                        doivent être de concert avec le prix unitaire et le prix total.
+                    </p>
+                    <p>
+                        Langages: HTML, CSS <br>
+                        Technologie: JavaScript
+                    </p>
+                </div>
+
+            </div>
+            <div class="PROJET">
+
+                <div class="projet-rang">
+                    <div class="embedresize">
+                        <iframe class="video2" src="https://www.youtube.com/embed/-muGFM_IeNA?si=pP4ZXXqW9fu96wbw"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <a class="github-projet" href="https://github.com/RoxanneMar/Menu-accordeon" target="_blank">
+                        <i class="fa-brands fa-github fa-2xl" style="color: #e85510;"></i>
+                    </a>
+                    <p>Dans le but de progresser, j'ai commencé à réaliser des défis sur Frontend Mentor en commencant
+                        par le menu accordéon.
+                        Grâce à ce projet, j'ai pu m'exercer à reproduire une maquette, en plus de progresser
+                        en JavaScript.
+                    </p>
+                    <p>
+                        Langages: HTML, CSS <br>
+                        Technologie: JavaScript
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        </div>
+        </div>
+    </article>
+    <article id="Contact" class="Contact">
+        <div class="contact-div">
+            Vous êtes interessez par mon profil ou simplement vouloir échanger sur un sujet.
+        </div>
+        <h1 class="contact-discusion">Discutons ensemble</h1>
+        <div class="form_all">
+            <div class="contact-all">
+                <div class="Contact-name-mail">
+                    <div class="label_input">
+                        <label for="fullname">Votre nom et prénom</label>
+                        <input id="fullname" class="input-ctrl" name="fullname" type="text" required />
+                        <div class="error"></div>
+                    </div>
+                    <div class="label_input">
+                        <label for="email">Votre e-mail</label>
+                        <input id="email" name="email" class="input-ctrl" required type="email"
+                            placeholder="example@example.com" autocomplete="on" />
+                        <div class="error"></div>
+                    </div>
+                </div>
+                <div class="lab_inp_msg">
+                    <label for="message">Votre message</label>
+                    <textarea rows="7" cols="110" id="message" name="message"></textarea>
+                    <div class="error"></div>
+                </div>
+            </div>
+            <button type="submit" class="final" onclick="sendMail()">
+                <i class="fa-solid fa-paper-plane fa-sm" style="color: #e85410;"></i>
+                Envoyer
+            </button>
+        </div>
+    </article>
+</body>
+<footer>
+    <div>
+        <a href="www.linkedin.com/in/roxanne-marchand-8a3144146/" target="_blank">
+            <i class="fa-brands fa-linkedin fa-2xl" style="color: #e85510;"></i>
+        </a>
+        <a href="https://github.com/RoxanneMar" target="_blank">
+            <i class="fa-brands fa-github fa-2xl" style="color: #e85510;"></i>
+        </a>
+
+        <a href="mailto:marchand.roxanne@gmail.com">
+            <i class="fa-solid fa-envelope fa-2xl" style="color: #e85510;"></i>
+        </a>
+    </div>
+    <p>Réalisé par Roxanne MARCHAND</p>
+</footer>
+
+</html>

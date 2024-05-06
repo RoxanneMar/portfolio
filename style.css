@@ -1,0 +1,706 @@
+/*------------------------------------------------------------------Genéral------------------------------------------------------------*/
+html {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: whitesmoke;
+}
+
+body {
+    margin: auto;
+}
+
+/*------------------------------------------------------------Barre de navigation-------------------------------------------------------*/
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    height: 60px;
+    width: 100%;
+    background-color: whitesmoke;
+    z-index: 99;
+
+}
+
+
+.rm {
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(72, 24, 2);
+    padding-left: 15px;
+}
+
+.nav-menu-ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding-right: 15px;
+}
+
+.nav-menu-li {
+    color: rgb(72, 24, 2);
+    padding: 5px 10px 5px 0px;
+}
+
+/*.nav-menu-li.active a {
+    color: rgb(232, 85, 16);
+}*/
+.nav-link.active {
+    color: rgb(232, 85, 16);
+    border-bottom: 3px solid rgb(232, 85, 16);
+}
+
+/*.line{
+    position: absolute;
+    height: 3px;
+    width:50px;
+    background-color: rgb(232, 85, 16) ;
+    top: 40px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}*/
+.nav-menu a {
+    text-decoration: none;
+    color: rgb(72, 24, 2);
+    padding: 2px;
+}
+
+.nav-menu a:hover {
+    color: rgba(232, 84, 16, 0.573);
+}
+
+/*-------------------------------------------------------Accueil - Premier article-----------------------------------------------------*/
+
+.Accueil {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 75px;
+}
+
+.Accueil-photo {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.photo-RM {
+    clip-path: ellipse(50% 37%);
+    width: 50%;
+    height: auto;
+}
+
+.Accueil-Hello {
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
+    justify-content: center;
+    text-align: left;
+    font-size: 25px;
+    width: 50%;
+    color: rgb(232, 85, 16);
+}
+
+.Accueil-Hello a {
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.CV-RM {
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    padding: 7px 5px;
+    background-color: rgba(72, 24, 2, 0.066);
+    border-color: transparent;
+    border-radius: 10px;
+    gap: 5px;
+    justify-content: center;
+    color: rgb(72, 24, 2);
+}
+
+.CV-RM:hover,
+.final:hover {
+    border-color: rgb(232, 85, 16);
+}
+
+.CV-RM i {
+    padding-top: 6px;
+}
+.CV-br{
+    display: none;
+}
+
+/*------------------------------------------------------- A propos - deuxième article --------------------------------------------------*/
+
+.A-propos-de-moi {
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.A-propos-de-moi-txt {
+    font-size: 20px;
+    color: rgb(232, 85, 16);
+    border: 0.5mm none;
+    box-shadow: 0px 0px 17px -1px rgba(0, 0, 0, 0.1);
+    border-radius: 2rem;
+    padding: 30px 30px;
+    max-width: 80%;
+}
+
+.lien {
+    color: rgb(232, 85, 16);
+}
+
+.lien:hover {
+    color: rgba(232, 84, 16, 0.573);
+    ;
+}
+
+/* ------------------------------------------------------Mes compétences - troisième article-------------------------------------------*/
+
+.Mes-compétences-ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 40px;
+    padding-left: 0%;
+}
+
+.Mes-compétences {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.Mes-compétences-menu {
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.Mes-compétences-menu a {
+    color: rgb(72, 24, 2);
+    text-decoration: none;
+    padding: 0px 50px;
+    font-size: 25px;
+    border: 0.3mm solid rgb(72, 24, 2);
+    border-radius: 1rem;
+    box-shadow: 0px 0px 17px -1px rgba(0, 0, 0, 0.151);
+}
+
+/*.Mes-compétences-menu-ul >.Softskills-is-active{
+    box-shadow: none;
+}*/
+.tabs-btn.active a {
+    box-shadow: none;
+    color: rgb(232, 85, 16);
+    border: 0.3mm solid rgb(232, 85, 16);
+}
+
+.Mes-compétences-menu a:hover {
+    color: rgb(232, 85, 16);
+    border: 0.3mm solid rgba(232, 84, 16, 0.573);
+    transition: all 0.4s;
+
+}
+
+.Mes-compétences-menu a:active {
+    box-shadow: none;
+}
+
+.Mes-compétences-soft-skills,
+.Mes-compétences-hard-skills {
+    color: rgb(232, 85, 16);
+    gap: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 100%;
+}
+
+.Mes-compétences-soft-skills-rang {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+    width: 80%;
+    gap: 60px;
+    max-height: 100%;
+}
+
+.SOFTSKILL {
+    max-width: 25%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 590px;
+
+}
+
+.Mes-compétences-skills {
+    display: none;
+}
+
+.Mes-compétences-skills.active {
+    display: block;
+}
+
+.compétences-logo {
+    height: 90px;
+    width: auto;
+}
+
+hr {
+    width: 500px;
+
+}
+
+.compétence-autres {
+    font-size: 33px;
+    margin-top: 0px;
+}
+
+.txt-explicatif {
+    max-width: 70%;
+}
+
+/*-----------------------------------------------------------article 4 Mes projets----------------------------------------------------*/
+/*iframe {
+    max-width: 500px;
+    height: auto;
+}*/
+
+
+
+.Mes-projets {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+}
+
+.projet-cadre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 0.5mm none;
+    box-shadow: 0px 0px 17px -1px rgba(0, 0, 0, 0.1);
+    border-radius: 2rem;
+    padding: 30px 30px;
+    max-width: 80%;
+    height: auto;
+    margin-top: 40px;
+}
+
+.Mes-projets-menu a {
+    color: rgb(72, 24, 2);
+    text-decoration: none;
+
+
+}
+
+.btn.active a {
+    color: rgb(232, 85, 16);
+}
+
+.Mes-projets-menu a:hover {
+    color: rgba(232, 84, 16, 0.573);
+}
+
+.Mes-projets-ul {
+    list-style: none;
+    text-wrap: nowrap;
+    padding-left: 0;
+}
+
+hr {
+    border: none;
+    border-left: 1px solid hsla(200, 10%, 50%, 100);
+    height: 80%;
+    width: 1px;
+    margin-left: 30px;
+}
+
+.PROJET.active {
+    display: block;
+
+}
+
+.PROJET {
+    display: none;
+
+}
+
+.github-projet {
+    padding-top: 10px;
+}
+
+
+.projet-rang {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0px 30px 30px;
+    color: rgb(232, 85, 16);
+    position: relative;
+    
+    
+}
+.embedresize{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height:40% ;
+    margin: 170px 0px;
+}
+
+.video1{
+    position: absolute;
+    width: 70%;
+    height: 40%;
+    top: 50px;
+}
+.video2{
+    position: absolute;
+    width: 70%;
+    height: 50%;
+    top: 50px;
+}
+
+
+/* -----------------------------------------------------------article 5 Contact------------------------------------------------------*/
+
+
+.Contact {
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(232, 85, 16);
+    margin-top: 40px;
+
+}
+
+.Contact-name-mail {
+    display: flex;
+    gap: 32px;
+    flex-direction: row;
+}
+
+.label_input {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.label_input>input {
+    height: 32px;
+}
+
+.lab_inp_msg {
+    margin-top: 19px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.lab_inp_msg>input {
+    height: 112px;
+}
+
+.final {
+    width: 123px;
+    height: 46px;
+    font-size: 18px;
+    border-color: transparent;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    opacity: 1;
+    color: rgb(72, 24, 2);
+    margin-top: 16px;
+}
+
+input,
+textarea {
+    border: none;
+    border-radius: 10px;
+}
+
+.contact-discusion {
+    font-size: 27px;
+    color: rgb(232, 85, 16);
+}
+
+label {
+    color: rgb(72, 24, 2);
+}
+
+.contact-all {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.form_all {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.contact-div{
+    padding: 0 10px;
+}
+
+
+/* ---------------------------------------------------------Footer-----------------------------------------------------------*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer div {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+/*------------------------------------------------------------Média Queries------------------------------------------------------------*/
+
+@media screen and (max-width:860px) {
+    .CV-RM {
+        height: 50px;
+    }
+
+    .CV-RM i {
+        padding: 12px 0px 0px 10px;
+    }
+
+    .Accueil-photo {
+        min-width: 55%;
+    }
+
+    .Mes-projets {
+        margin-top: 150px;
+    }
+
+    textarea {
+        height: 5em;
+        width: 50em;
+    }
+
+    .accueil-br {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:720px) {
+    .nav-menu-ul.Menu-telephone {
+        display: flex;
+    }
+
+    .nav-menu-ul {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(173, 172, 172, 0.078);
+        backdrop-filter: blur(7px);
+        height: 100vh;
+        margin-top: 0;
+        padding-top: 50px;
+        align-items: end;
+        justify-content: right;
+        padding-right: 0;
+        position: absolute;
+        right: 0;
+    }
+
+    .Burger-menu {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+
+    }
+
+    .SOFTSKILL {
+        min-width: 175px;
+    }
+
+    .Accueil {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20% 0%;
+    }
+
+    .Accueil-photo {
+        justify-content: center;
+        min-width: 70%;
+
+    }
+
+    .Accueil-Hello{
+        display: flex;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .Accueil-Hello a{
+        max-width: 100%;
+    }
+
+    .CV-br{
+        display: block;
+    }
+
+    .projet-cadre {
+        flex-direction: column;
+    }
+
+    hr {
+        border: none;
+        border-bottom: 1px solid hsla(200, 10%, 50%, 100);
+        height: 1px;
+        width: 90%;
+        margin-left: 30px;
+        
+    }
+
+    .Mes-projets-ul {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    textarea {
+        height: 4em;
+        width: 30em;
+    }
+    /*iframe{
+        max-width: 350px;
+        height: auto;
+    }*/
+    .video1 {
+        height: 30%;
+    }
+    .video2{
+        height: 40%;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .Burger-menu {
+        display: none;
+    }
+
+}
+@media screen and(min-width: 720px),
+(max-width:860px) {
+    .Accueil-Hello {
+        width: 80%;
+    }
+
+    .Accueil-photo {
+        justify-content: center;
+    }
+
+    .Accueil {
+        gap: 0px;
+    }
+
+    .video1 {
+        height: 35%;
+    }
+
+    .video2 {
+        height: 45%;
+    }
+}
+
+@media screen and (max-width: 478px) {
+
+    .Mes-compétences-ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 465px) {
+
+
+    .Contact-name-mail {
+        display: flex;
+        flex-direction: column;
+    }
+
+    textarea {
+        height: 4em;
+        width: 20em;
+    }
+
+    .A-propos-de-moi {
+        height: auto;
+    }
+
+    .Mes-projets {
+        height: auto;
+    }
+
+    .Mes-projets-ul {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    /*iframe {
+        max-width: 250px;
+        height: auto;
+    }*/
+    .video1 {
+        height: 20%;
+    }
+
+    .video2 {
+        height: 30%;
+    }
+
+}
+
+@media screen and (max-width: 310px) {
+
+    .A-propos-de-moi {
+        margin: 90% 2% 50% 2%;
+    }
+
+    .Accueil-photo {
+        min-width: 55%;
+        margin-top: 30%;
+    }
+}
+
