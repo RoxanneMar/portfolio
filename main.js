@@ -78,10 +78,10 @@ const errorname = document.getElementById('errorname');
 function validateName(){
     if (!fullname.value.match(/^[A-Za-z]*[/s-]*[A-za-z]$/)){
         errorname.innerHTML ="Veuillez saisir votre Nom et Prénom";
-        return false
+        return true
     }
     errorname.innerHTML = "";
-    return true
+    return false
 }
 
 // Contact - envoie de mail - valide
