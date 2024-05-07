@@ -128,7 +128,7 @@ const email = document.getElementById('email');
 const error = document.getElementById('error');
 
 function validateEmail() {
-    if (!email.value.match(/^[A-Za-z\._\-0-9]*[\.][a-z]{2,4}$/)) {
+    if (!email.value.match(/^[A-Za-z\._\-0-9]*[\@][a-z]*[\.][a-z]{2,4}$/)) {
         error.innerHTML = "Entrer une adresse Email valide";
         return false
     }
