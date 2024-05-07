@@ -122,7 +122,19 @@ btn.forEach((tab, index) => {
 //    SetSuccess(email);
 //}
 
-// Contact - envoie de mail
+// Contact - envoie de mail - valide
+
+const email = document.getElementById('email');
+const error = document.getElementById('error');
+
+function validateEmail() {
+    if (!email.value.match(/^[A-Za-z\._\-0-9]*[\.][a-z]{2,4}$/)) {
+        error.innerHTML = "Entrer une adresse Email valide";
+        return false
+    }
+    error.innerHTML = "";
+    return true
+}
 
 
 //function generateMailto() {
