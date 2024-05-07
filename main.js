@@ -76,7 +76,7 @@ const fullname = document.getElementById('fullname');
 const errorname = document.getElementById('errorname');
 
 function validateName(){
-    if (!fullname.value.match(/^[A-Za-z-][\t\n\r][A-za-z]$/)){
+    if (!fullname.value.match(/^[A-Za-z]$/)){
         errorname.innerHTML ="Veuillez saisir votre Nom et Prénom";
         return false
     }
