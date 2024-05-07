@@ -248,8 +248,8 @@
                 <div class="Contact-name-mail">
                     <div class="label_input">
                         <label for="fullname">Votre nom et prénom</label>
-                        <input id="fullname" class="input-ctrl" name="fullname" type="text" required />
-                        <div class="error"></div>
+                        <input id="fullname" class="input-ctrl" name="fullname" type="text" required onkeyup="validateName()" />
+                        <div id="errorname"></div>
                     </div>
                     <div class="label_input">
                         <label for="email">Votre e-mail</label>

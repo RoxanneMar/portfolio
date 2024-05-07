@@ -70,57 +70,19 @@ btn.forEach((tab, index) => {
     });
 });
 
-// Contact - Nom prenom valide
+// Contact - Nom Prenom
 
-//let fullname = document.getElementById('#fullname');
-//const form = document.querySelector('.form_all');
-//let email = document.querySelector('#email');
-//
-//form.addEventListener('submit', (e) => {
-//    e.preventDefault();
-//
-//    validateInputs();
-//});
-//const SetError = (element, message) => {
-//    const inputctrl = element.parentElement;
-//    const errorDisplay = inputctrl.querySelector('.error');
-//
-//    errorDisplay.innerText = message;
-//    inputctrl.classList.add('error');
-//    inputctrl.classList.remove('success');
-//}
-//const SetSuccess = element => {
-//    const inputctrl = element.parentElement;
-//    const errorDisplay = inputctrl.querySelector('.error');
-//
-//    errorDisplay.innerText = '';
-//    inputctrl.classList.add('success');
-//    inputctrl.classList.remove('error');
-//}
-//const isValidEmail = email => {
-//    const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-//    return re.test(String(email).toLowerCase());
-//}
-//
-//const validateInputs = () => {
-//    const fullnameValue = fullname.value;
-//
-//
-//    if (fullnameValue === '') {
-//        SetError(fullname, 'Le nom et prénom sont requis');
-//    } else {
-//        SetSuccess(fullname);
-//    }
-//};
-//// Contact - email valide
-//const emailValue = email.Value;
-//if (emailValue === '') {
-//    SetError(email, 'Email requis');
-//} else if (!isValidEmail(emailValue)) {
-//    SetError(email, 'Indiquer une adresse mail valide');
-//} else {
-//    SetSuccess(email);
-//}
+const fullname = document.getElementById('fullname');
+const errorname = document.getElementById('errorname');
+
+function validateName(){
+    if (!fullname.value.match(/^[A-Za-z]*[/s-]*[A-za-z]$/)){
+        errorname.innerHTML ="Veuillez saisir votre Nom et Prénom";
+        return false
+    }
+    errorname.innerHTML = "";
+    return true
+}
 
 // Contact - envoie de mail - valide
 
